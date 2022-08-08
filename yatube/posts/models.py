@@ -16,7 +16,7 @@ class Group(models.Model):
 
 
 class Post(models.Model):
-    OUTPUT_OF_POSTS = 10
+    OUTPUT_OF_POSTS: int = 10
 
     text = models.TextField(verbose_name='Текст')
     pub_date = models.DateTimeField(auto_now_add=True,
